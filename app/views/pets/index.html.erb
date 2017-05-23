@@ -1,0 +1,24 @@
+<ul>
+  <% @pets.each do |pet| %>
+  <li><%= pet.name %></li>
+  <% end %>
+</ul>
+
+<%= form_for(@pet) do  |f| %>
+
+  <%= f.label :name  %>
+  <%= f.text_field :name  %>
+
+  <%= f.label :species  %>
+  <%= f.text_field :species  %>
+
+  <%= f.label :location  %>
+  <%= f.text_field :location  %>
+
+  <%= f.label :color  %>
+  <%= f.text_field :color  %>
+  <%= f.submit "send"  %>
+
+
+<%end  %>
+
